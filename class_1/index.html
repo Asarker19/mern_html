@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta is for SEO-->
+    <meta charset="UTF-8">
+    <!--Setting the viewport to make your website look good on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the first class of HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Anup Sarker">
+    <!--Refresh document every 30 seconds-->
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <!--Favicon in the Head section-->
+    <link rel="icon" href="./images/fav_1.png" type="image/x-icon">
+    <title>HTML Class 1</title>
+</head>
+
+<body>
+    <h1>Heading 1</h1> <!--Main heading: only one Heading per page-->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!--Paragraph tag-->
+    <!--<br> tag is used for line break-->
+    <!--Lorem trick: type "Lorem20" it will generate 20 lorem words-->
+    <!--Checkout Other formatting Elements in W3C-->
+    <p>Lorem ipsum dolor sit amet consectetur,<br>
+        adipisicing elit. <em>Emphasis</em> Amet <strong>STRONG</strong> dignissimos <br>
+        ut similique eos <i>Italic</i> dolorem eius architecto non earum nisi <br>
+        reprehenderit fuga molestias nam nemo adipisci delectus,
+        pariatur aspernatur veritatis.</p>
+
+    <h2>Testing text Formatting.</h2>
+    <p>For bold use b tag <b>bold</b><br>
+        For Strong use strong tag <strong>strong</strong><br>
+        For Italic use i tag <i>italic</i>
+        For Emphasis use em tag <em>emphasis</em><br>
+        For Deleted use del tag <del>deleted text</del><br>
+        For Inserted use ins tag <ins>inserted text</ins><br>
+        For Subscript use sub tag H<sub>2</sub>O<br>
+        For Superscript use sup tag E=MC<sup>2</sup><br>
+        For Mark use mark tag <mark>marked text</mark><br>
+    </p>
+    <h2>Playing with list: 3 types</h2>
+    <!--Unordered List-->
+    <h3>1- Unordered List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS
+            <ul>
+                <li>CSS 1</li>
+                <li>CSS 2</li>
+                <li>CSS 3</li>
+            </ul>
+        </li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+    <!--Ordered List-->
+    <h3>2- Ordered List</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS
+            <ol>
+                <li>CSS 1</li>
+                <li>CSS 2</li>
+                <li>CSS 3</li>
+            </ol>
+        </li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ol>
+    <h3>3- Description List</h3>
+    <dl> <!--Description List-->
+        <dt>HTML</dt><!--Description Term-->
+        <dd>HTML is the standard markup language for creating Web pages.</dd><!--Description Definition-->
+        <dt>CSS</dt>
+        <dd>CSS is the language we use to style an HTML document.</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript is the programming language of the Web.</dd>
+    </dl>
+
+    <h2>Media: image, audio, vedio</h2>
+    <img src="./images/img_1.jpg" alt="Lake" title="Lake" width="300px"><br>
+
+    <!--Video: Embedding a YouTube video into an HTML page is most easily done using an <iframe> tag.
+Find the video on YouTube.
+Click the "SHARE" button.
+Click the "Embed" option.
+Copy the generated HTML code.
+Paste the code into your HTML file where you want the video to appear.-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XG7iAoX6VcY?si=Tm30bm8S8vyUv2gh&amp;start=16"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+    <audio controls>
+        <source src="./audio/sample-12s.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <!-- HTML Form-->
+    <h2>HTML Form</h2>
+    <form>
+        <!--The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.-->
+        <!--Text input-->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name.."><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email.."><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="100" placeholder="Your age.."><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+        <!--Time input-->
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br>
+        <!--Password input-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Your password.."><br>
+
+        <p>Select your favorite programming language:</p><br>
+        <!--Radio Button input-->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <!--Checkbox input-->
+        <p>Checkbox</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br> <br>   
+        <!--Dropdown-->
+        <label for="country">Choose a country:</label>  <br>
+        <select id="country" name="country">
+            <option value="bangladesh">Bangladesh</option>
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="srilanka">Sri Lanka</option> <br><br>
+            
+
+            <!--The readonly Attribute-->
+            <label for="readonly">Readonly Input:</label><br>
+            <input type="text" id="readonly" name="readonly" value="Readonly Input" readonly><br>
+      
+      <!--The disabled Attribute -->
+            <label for="disabled">Disabled Input:</label><br>
+            <input type="text" id="disabled" name="disabled" value="Disabled Input" disabled><br>
+        </select><br><br>
+            <!-- <input type="submit" value="Submit"> -->
+    </form>
+
+</body>
+
+</html>
