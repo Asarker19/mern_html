@@ -6,89 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./media/fav_1.png" type="image/x-icon">
-    <title>Contact us</title>
-    <!-- <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
-
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-    </style> -->
+    <title>Contact us</title>  
 </head>
 
 <body>
     <nav>
         <span>
-            <img src="./media/fav_1.png" alt="Logo">
+            <img src="./media/fav_1.png" alt="Logo">&nbsp;&nbsp;&nbsp;
         </span>
-        <a href="./index.html"> Home</a>
-        <a href="./about.html"> About us</a>
-        <label for="search">Search:</label>
-        <input type="text" id="search" name="search" placeholder="Search my page..">
+        <a href="./index.html"> Home</a>&nbsp;&nbsp;&nbsp;
+        <a href="./about.html"> About us</a>&nbsp;&nbsp;&nbsp;
+        <!--Search my page-->
+        <span>
+            <label for="search">Search:</label>
+            <span>
+                <input type="search" id="search" name="search" placeholder="Search my page..">
+            </span>
+        </span>
     </nav><br>
-
+<hr>
     <!-- Contact Form Start-->
     <h1>Contact us</h1>
     <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your full name"><br>
-        <label>Email:</label>
-        <input type="email" id="email" name="email" placeholder="example@mail.com"><br>
+        <input type="text" id="name" name="name" placeholder="Your full name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
         <label>Your Gender</label><br>
-        <input type="radio" id="male" value="male">
+        <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
-        <input type="radio" id="female" value="female">
-        <label for="male">Female</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
         <label for="country">Country:</label>
         <select id="country" name="country">
             <option value="bangladesh">Bangladesh</option>
             <option value="australia">Australia</option>
             <option value="india">India</option>
             <option value="pakistan">Pakistan</option>
-            <option value="srilanka">Sri Lanka</option> <br>
+            <option value="srilanka">Sri Lanka</option>
+        </select><br><br>
 
-        <label for="subject">Subject:</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"><br>
-        <input type="button" onclick="alert('Form submitted')" value="Click Me!">
+        <label for="subject">Subject:</label><br>
+        <textarea id="subject" name="subject" placeholder="Your query.." style="height:200px"></textarea><br><br>
+
+        <input type="button" onclick="alert('Form submitted')" value="Submit">
     </form>
-
     <!-- Contact Form end-->
+     <hr>
+      <!-- Footer start-->
+    <footer>
+        <p> &copy; 2025 All rights reserved</p>
+    </footer>
+    <!-- Footer end-->
 </body>
-
 </html>
