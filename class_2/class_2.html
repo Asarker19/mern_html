@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2: Table </title>
+</head>
+
+<body>
+    <h1>HTML Table</h1>
+    <!-- Table attributes to show table boarder and style -->
+    <table border="1" style="border-collapse: collapse">
+        <!-- Table Head and Column Name-->
+        <thead>
+            <th>Name </th>
+            <th>Email</th>
+            <th>Fav Subject</th>
+            <th>Year</th>
+        </thead>
+        <tbody>
+            <!-- Table Row -->
+            <tr>
+                <!-- Table Data|| cell -->
+                <td>John Doe</td>
+                <td>jd@email.com</td>
+                <td>Math</td>
+                <!-- rowspan: to merge row, value is how many rows we need to cover-->
+                <td rowspan="2">2024</td>
+            </tr>
+            <tr>
+                <!-- Table Data || cell-->
+                <td>James Doe</td>
+                <td>jd@email.com</td>
+                <td>Math</td>
+                <!-- <td>2024</td> -->
+            </tr>
+            <tr>
+                <!-- Table Data || cell-->
+                <td>Test Doe</td>
+                <td>jd@email.com</td>
+                <td>Math</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <!--colspan: to merge column, value is how many comuns we need to cover-->
+                <td colspan="4">All right reserved</td>
+            </tr>            
+        </tbody>
+    </table>
+    <!--Inline and Block Element-->
+    <h1>Hello World -- h1 Block level element</h1>
+    <h2>Hello Jupiter</h2>
+    <a href="#">Google-Inline level</a>
+    <a href="#">Yahoo- Inline level</a>
+
+</body>
+</html>
