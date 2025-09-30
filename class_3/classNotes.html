@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class note FORM</title>
+</head>
+
+<body>
+    <form>
+        <!--To fix inline element issue
+        We are creating seperate div group for each form element.-->
+        <!-- Label and input connected using id field-->
+        <div class="from-group">
+            <!--requored make the input field mandatory-->
+            <label for="fullName">Full Name* :</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter you name." required/>
+        </div><br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="example@email.com"/>
+        </div><br>
+        <div class="form-group">
+            <!--Check box: label comes after the input-->
+            <input type="checkbox" name="" id="cricket"/>
+            <label for="cricket">Cricket</label>
+        </div><br>
+        <div class="form-group">
+            <label for="color">Colour</label>
+            <input type="color" id="color" name=""/>
+        </div><br>
+        <div class="form-group">
+            <!-- Number input only allow numbers,
+             also we can fix the range using number input-->
+            <label for="number">Number</label>
+            <input type="number" id="number" name="" min="0" max="5"/>
+        </div><br>
+        <div class="from-group">
+            <!-- We can also use range tag  -->
+             <label for="range">Range: between 1 and 100</label>
+             <input type="range" id="range" name="" min="1" max="100"/>
+        </div><br>
+        <div class="form-group">
+            <p>Select your Uni. year:</p>
+            <select name="" id="">
+                <!-- by using disabled and selected attribute we can make hin text not to be part of the form-->
+                <option value="" disabled selected>--Select your year--</option>
+                <option value="1">First Yr</option>
+                <option value="2">Second Yr</option>
+                <option value="3">Third Yr</option>
+                <option value="4">Fourth Yr</option>
+            </select>
+        </div><br>
+        <div class="form-group">
+            <p>Gender</p>
+            <!-- Keep the name attribute same for all radio buttons
+             It will stopped user to select multiple option-->
+            <input type="radio" name="gender" id="male" value="M"/>
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="F"/>
+            <label for="female">Female</label>            
+        </div><br>
+        <div class="from-group">
+            <label for="">Upload your file: </label>
+            <input type="file" name="" id=""/>
+        </div><br>
+        <div class="from-group">
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd"/>
+        </div><br>
+        <div class="from-group">
+            <!--We can use value attribute to modify Submit button's label-->
+            <input type="submit" value="Registration"/>
+            <input type="reset" value="Clear"/>
+        </div>
+
+    </form>
+</body>
+
+</html>

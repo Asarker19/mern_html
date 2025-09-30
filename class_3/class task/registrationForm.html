@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3: Student Registration Form</title>
+    <style>
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group {
+            width: 48%;
+            /* force exactly two per row */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            /* keeps input widths consistent */
+        }
+
+        .full-width {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <!--Registration Form Start-->
+    <form>
+        <div class="form-group">
+            <label for="fullName">Full name* :</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter you name." required />
+        </div>
+        <div class="form-group">
+            <label for="fatherName">Father's name:</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Your father's name" />
+        </div>
+        <div class="form-group">
+            <label for="motherName">Mother's name:</label>
+            <input type="text" id="motherName" name="motherName" placeholder="Your mother's name" />
+        </div>
+        <div class="form-group">
+            <label for="nid">NID / Birth Certificate No.</label>
+            <input type="text" id="nid" name="nid" placeholder="Your NID or Birth certificate no." />
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" />
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+            <p style="font-weight: bold; margin-bottom: 5px;">Gender</p>
+            <fieldset style="border: none; padding: 0; margin: 0;">
+                <label><input type="radio" name="gender" id="male" value="M" />Male</label>
+                <label><input type="radio" name="gender" id="female" value="F" />Female</label>
+                <label><input type="radio" name="gender" id="other" value="O" />Other</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="m-status">Marital Status</label>
+            <input type="text" id="m-status" name="m-status" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+            <label for="b-group">Blood Group</label>
+            <select name="" id="b-group">
+                <option value="" disabled selected>--Select your blood group--</option>
+                <option value="a-">A-</option>
+                <option value="a+">A+</option>
+                <option value="b-">B-</option>
+                <option value="b+">B+</option>
+                <option value="ab-">AB-</option>
+                <option value="ab+">AB+</option>
+                <option value="o-">O-</option>
+                <option value="o+">O+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="religion">Religion</label>
+            <select name="" id="religion">
+                <option value="" disabled selected>--Select your religion--</option>
+                <option value="h">Hindu</option>
+                <option value="m">Islam</option>
+                <option value="b">Budhist</option>
+                <option value="c">Christian</option>
+                <option value="n">Not applicable</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pwd" class="pwd">Password</label>
+            <input type="password" id="pwd" name="" placeholder="Enter your password.." />
+        </div>
+        <div class="form-group">
+            <label for="addr" class="addr">Address</label>
+            <textarea id="addr" name="addr" placeholder="Enter your address."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="photo" class="photo-upload">Upload your photo</label>
+            <input type="file" id="photo" />
+        </div>
+        <div class="form-group">
+            <label for="fav-color" class="fav-color">Favorite color</label>
+            <input type="color" id="fav-color" />
+        </div>
+        <div class="form-group">
+            <label for="skill" class="skill">Skill level (0-10)</label>
+            <input type="range" id="skill" min="0" max="10" />
+        </div>
+
+        <div class="full-width" style="margin-bottom: 20px;">
+            <input type="checkbox" name="" id="terms" />
+            <label for="terms">I agree with the terms and conditions.</label>
+        </div>
+        <div class="submit" style="margin-bottom: 20px;">
+            <input type="submit" value="Registration" />
+            <input type="reset" value="Clear" />
+        </div>    
+    </form>
+    <!--Registration Form End-->
+</body>
+
+</html>
